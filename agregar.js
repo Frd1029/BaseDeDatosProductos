@@ -1,6 +1,6 @@
 document.getElementById("guardar").addEventListener("click", function () {
-  alert("Entro");
-  // Obtener los valores del formulario
+ // alert("Entro");
+  
   const nombre = document.getElementById("nombre").value;
   const precio = document.getElementById("precio").value;
   const descripcion = document.getElementById("descripcion").value;
@@ -8,15 +8,15 @@ document.getElementById("guardar").addEventListener("click", function () {
   if (nombre === '' || precio === '' || descripcion === '') {
     alert(" Complete todos los campos para guardar.");
   } else {
-    // Crear un objeto con los datos del formulario
-  alert(nombre+"_"+ precio+"_"+descripcion );
+   
+  //alert(nombre+"_"+ precio+"_"+descripcion );
     const data = {
       nombre: nombre,
       precio: precio,
       descripcion: descripcion
     };
-alert(console.log(data));
-    // Realizar una solicitud HTTP a la API
+//alert(console.log(data));
+    
     fetch("https://siaweb-nodejs.carlos-reneren7.repl.co/productos", {
       method: "POST",
       headers: {
@@ -26,7 +26,7 @@ alert(console.log(data));
       
     })
     .then(response => {
-        alert("Entro2" + console.log(data));
+    //    alert("Entro2" + console.log(data));
         if (response.ok) {
           alert("Los datos se han enviado correctamente a la API.");
           window.location.href = "index.html";
@@ -37,6 +37,6 @@ alert(console.log(data));
       .catch(error => {
         console.error("Error: " + error);
       });
-      alert("FIN")
+   //   alert("FIN")
   }
 });
