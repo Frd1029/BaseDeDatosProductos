@@ -1,6 +1,5 @@
 document.getElementById("guardar").addEventListener("click", function () {
   alert("Entro");
-
   // Obtener los valores del formulario
   const nombre = document.getElementById("nombre").value;
   const precio = document.getElementById("precio").value;
