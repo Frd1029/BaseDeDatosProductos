@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css">
 	<title>Pruebas JavaScript</title>
 </head>
 <body>
-	<h1>Lista de Productos </h1>
-    <table id="tablaUsuarios">
-        <thead>
-            <tr>                
-                <th>Nombre</th>
-                <th>Descripcion</th>
-                <th>Precio</th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- Aquí se insertarán las filas de la tabla -->
-        </tbody>
-    </table>
+  <h1>Lista de Productos</h1>
 
-   
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre del Producto</th>
+        <th>Precio</th>
+        <th>Descripción</th>
+      </tr>
+    </thead>
+    <tbody id="productos-lista">
+      <!-- Los datos de productos se insertarán aquí usando JavaScript -->
+    </tbody>
+  </table>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
