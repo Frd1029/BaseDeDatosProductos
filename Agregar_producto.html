@@ -3,28 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.css">
-  <title>Agregar Producto</title>
+  <title>Agregar Producto - Crocus</title>
 </head>
 <body>
-    <div class="container"></div>
-  <h2>Agregar Producto</h2>
+  <h1>Agregar Producto</h1>
 
   <form id="agregar-form">
     <label for="nombre">Nombre del Producto:</label>
-    <input type="text" id="nombre" name="nombre" required><br><br>
+    <input type="text" id="nombre" required><br><br>
+     
 
     <label for="precio">Precio del Producto:</label>
-    <input type="number" id="precio" name="precio" required><br><br>
+    <input type="number" id="precio" required><br><br>
 
     <label for="descripcion">Descripción del Producto:</label><br>
-    <textarea id="descripcion" name="descripcion" rows="4" cols="50"></textarea><br><br>
+    <textarea id="descripcion" rows="4" cols="50"></textarea><br><br>
 
-    <button type="submit">Guardar</button>
-    <button type="button" id="cancelar">Cancelar</button>
+    <button type="submit" id="guardar guardian" >Guardar</button>
+    <a href="index.html"><button type="button" id="cancelar">Cancelar</button></a>
   </form>
 
-  <div id="mensfaje"></div>
+  <div id="mensaje"></div>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="script.js"></script>
