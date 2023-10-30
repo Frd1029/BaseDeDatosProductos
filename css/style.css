@@ -8,4 +8,26 @@
 	border-radius: 5px;
     text-align: center;
 	border-color: black;
+
+}
+
+textarea{
+	width: 170px;
+	height: 100px;
+}
+
+#div{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+
+	grid-gap: 20px;
+	margin: 40px 0px;
+}
+
+.grid-label{
+	grid-column: 1 span;
+}
+
+.grid-input{
+	grid-column: 1 span;
 }
