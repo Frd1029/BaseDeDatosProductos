@@ -29,6 +29,7 @@ alert(console.log(data));
         alert("Entro2" + console.log(data));
         if (response.ok) {
           alert("Los datos se han enviado correctamente a la API.");
+          window.location.href = "index.html";
         } else {
           alert("Hubo un problema al enviar los datos a la API.");
         }
